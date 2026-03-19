@@ -1,8 +1,0 @@
-create table curso(
-indCurso int(5) NOT NULL,
-nome Varchar(80) NOT NULL,
-cargaHoraria Varchar(40) NOT NULL);
-
-insert into curso values (1, 'Desenvolvimento de Sistemas', '1200 horas');
-insert into curso values (2, 'Administração', '1000 horas');
-insert into curso values (3, 'Enfermagem', '1400 horas');
