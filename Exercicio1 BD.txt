@@ -1,0 +1,17 @@
+Create DATABASE Veterinária;
+use Veterinária;
+
+create table Animal(
+indAnimal int(5) NOT NULL,
+nome Varchar (80) NOT NULL,
+especie Varchar(80) NOT NULL,
+raca Varchar(80) NOT NULL,
+dataNascimento Varchar(10) NOT NULL,
+nomeProprietario Varchar(80) NOT NULL);
+
+insert into animal values (1,'Rex', 'Cachorro', 'Labrador', '10/05/2019', 'João Silva');
+insert into animal values (2,'Mimi', 'Gato', 'Siamês', '02/03/2021', 'Ana Souza');
+
+SET sql_safe_updates = 0;
+
+update Animal set nomeProprietario = 'Carlos Silva' where indAnimal = 1
