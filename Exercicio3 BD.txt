@@ -1,0 +1,17 @@
+create database LojaEletronicos;
+use LojaEletronicos;
+
+create table produtos(
+codProduto int(5) NOT NULL,
+nome Varchar(40) NOT NULL,
+preco Decimal(10.2) NOT NULL);
+
+insert into produtos values(1, 'Mouse', 50.00);
+insert into produtos values(2, 'Teclado', 120.00);
+
+alter table produtos add disponivelEstoque int(200) NOT NULL;
+
+update produtos set disponivelEstoque = 80 where codProduto = 1;
+update produtos set disponivelEstoque = 100 where codProduto = 2;
+
+select*from produtos;
